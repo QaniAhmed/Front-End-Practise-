@@ -1,0 +1,46 @@
+html{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body{
+display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(1, 1, 28, 0.877);
+}
+div{
+  width: 1000px;
+  height: 1000px;
+  border-radius: 10px;
+ display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+img{
+
+  animation: test;
+  animation-duration: 2s;
+        transform-style: preserve-3d;
+        /* animation-direction: alternate; */
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+}
+img:hover{
+  width: 400px;
+  height: 400px;
+  cursor: pointer;
+  animation-play-state: paused;
+
+}
+@keyframes test{
+  0%{
+  }
+  50%{
+ transform: rotate3d(1, 2, 100, 360deg);
+  }
+  100%{
+ transform: rotate3d(2, 10, 100, -360deg);
+  }
+}
