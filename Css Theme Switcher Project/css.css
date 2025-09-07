@@ -1,0 +1,39 @@
+body{
+    display: flex;
+justify-content: end;
+align-items: start;
+}
+.invisible{
+    background-color: rgba(13, 13, 15, 0.79);
+    color: white;
+}
+.fa-sun {
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+}
+.fa-moon{
+    visibility: hidden;
+}
+
+.moon{
+    visibility: visible;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+}
+.sun{
+    visibility: hidden;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+}
+
+
+.cbgp{
+background-color: rgb(185, 88, 2);
+width: 100px;
+border-radius: 40px;
+padding:10px;
+
+}
+.changeBar{
+    background-color: rgb(10, 2, 52);
+}
