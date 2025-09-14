@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 2.4rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html{
+    height: 100%;
+}
+body{
+    background-color: rgb(11, 2, 31);
+    color: white;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+div {
+  display: flex;
+  background-color: rgb(55, 116, 174);
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden; 
+}
+
+div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 90%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.265),
+    transparent
+  );
+  animation: shine 5s infinite;
+}
+
+@keyframes shine {
+  100% {
+    left: 100%;
+  }
+}
+
+
+div:nth-child(1){
+       background-color: #2196f3;
+}
+div:nth-child(2){
+       background-color: #2196f3;
+}
+div:nth-child(3){
+       background-color: #fe006b;
+}
